@@ -1,11 +1,25 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const aproove = ref({
   title: "",
 });
 
 const time = ref(5);
+
+const timer = () => {
+  if (time.value > 0) {
+    time.value--;
+  } else {
+    clearInterval(timerId.value);
+  }
+};
+
+const timerId = ref(null);
+
+onMounted(() => {
+  timerId.value = setInterval(timer, 1000);
+});
 </script>
 
 <template>

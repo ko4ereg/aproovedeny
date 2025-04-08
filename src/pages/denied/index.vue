@@ -229,6 +229,7 @@ const time = ref(5);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        z-index: 2;
         span {
           color: #000;
           font-size: 25.838px;
@@ -247,8 +248,9 @@ const time = ref(5);
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-      word-break: break-word; 
+      word-break: break-word;
       white-space: normal;
+	  z-index: 2;
     }
   }
   .submit {

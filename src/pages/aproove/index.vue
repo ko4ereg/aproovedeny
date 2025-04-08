@@ -237,6 +237,7 @@ onMounted(() => {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+		z-index: 2;
         span {
           color: #000;
           font-size: 25.838px;
@@ -254,6 +255,7 @@ onMounted(() => {
       font-weight: 600;
       line-height: normal;
       text-align: center;
+	  z-index: 2;
     }
   }
   .v-btn {
